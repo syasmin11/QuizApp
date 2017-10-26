@@ -17,14 +17,11 @@ const categories = () => {
 	    console.log('Please choose a category to continue!');
 	    break;
 	}
-	$('#catbutton').on ('click', () => {
-		categories(category)
-		$('.catPage').hide()
-	})
-}
+};
+$('#catbutton').on ('click', () => {
+	categories(category)
+	$('#catPage').hide()
+});
 
-const quiz = () => {
-}
- 
 
 
