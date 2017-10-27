@@ -5,21 +5,36 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class= 'catPage'>
+	<div>
 		<h1 class= 'heading'>Quiz Trivia</h1>
-		<h2>Choose a category</h2>
-		<br>
-		<form>
-  			<input type="radio" name="category" value="generalKnowledge" checked>General Knowledge<br>
-  			<input type="radio" name="category" value="scienceNature"> Science and Nature<br>
-  			<input type="radio" name="category" value="politics"> Politics  
-		</form>
-		<button id="catButton"> Click to continue</button>
+		<div id="catPage">
+			<h2>Choose a category</h2>
+			<br>
+			<form id="categoryForm">
+  				<input type="radio" name="category" value="generalKnowledge" checked='checked'>General Knowledge</input><br>
+  				<input type="radio" name="category" value="scienceNature"> Science and Nature</input><br>
+  				<input type="radio" name="category" value="politics"> Politics</input>  
+			</form>
+			<button id="catButton"> Click to continue</button>
 
-		
+		</div>
+		<div style='display : none' id='questionPage'>
+			<h2 id= "question"> Question </h2>
+			<form id="answers">
+  				<input type="radio" name="answer" checked='checked'><label class="label" id="option0"></label></input><br>
+  				<input type="radio" name="answer" ><label class="label" id="option1"></label></input><br>
+  				<input type="radio" name="answer" ><label class="label" id="option2"></label> </input><br>
+				<input type="radio" name="answer" ><label class="label" id="option3"></label> </input>
+			</form>
+
+		</div>
 	</div>
 
 </body>
-<script type="text/javascript" src=""></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="src.js"></script>
 <noscript>Sorry, your browser does not support JavaScript!</noscript>
 </html>
